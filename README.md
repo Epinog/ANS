@@ -49,7 +49,7 @@ Bienvenidos al Proyecto de Agrupación de Pacientes COVID-19</h2>
   <li><B>Scripts:</B>  Contiene los notebook de python donde se han procesado o transformado los datos para el modelo</li>
   <li><B>Docs:</B> Documentación del proyecto</li>
   <li><B>Data:</B> Bases de datos que serán utilizadas para la construcción del modelo</li>
-  <li><B>Model:</B> Modelo de closterización (Aún no se encuentra elaborado)</li>
+  <li><B>Model:</B> Modelo de closterización </li>
   <li><B>image:</B> Imagenes utilizadas para la documentación (Imágenes de apoyo)</li>
 </ul>
 
