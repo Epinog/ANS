@@ -3,6 +3,13 @@
 </p>
 <h1 align="center"> Atención hospitalaria de pacientes con COVID-19 </h1>
 
+
+![Python](https://img.shields.io/badge/python-v3.6+-blue.svg)
+![Dependencies](https://img.shields.io/badge/dependencies-up%20to%20date-brightgreen.svg)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://GitHub.com/Naereen/StrapDown.js/graphs/commit-activity)
+![Contributions welcome](https://img.shields.io/badge/contributions-welcome-orange.svg)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Github all releases](https://img.shields.io/github/downloads/Naereen/StrapDown.js/total.svg)](https://GitHub.com/Naereen/StrapDown.js/releases/)
 <h3 align="center"> ¿Se pueden agrupar los pacientes según sus características de ingreso?</h3>
 <h5 align="center"> Proyecto Final - Análisis no supervisado</h5>
 
@@ -12,7 +19,7 @@
 
 <h2 align="center"> 
 Bienvenidos al Proyecto de Agrupación de Pacientes COVID-19</h2>
-<p>Exploraremos los datos de pacientes que han sido hospitalizados por COVID-19 en cuatro clínicas en diferentes ciudades de Colombia Estos datos incluyen detalles demográficos, síntomas al momento del ingreso, variables de examen físico, clasificaciones clínicas y resultados (ingreso a la unidad de cuidados intensivos-UCI y mortalidad).</p>
+<p>Exploraremos los datos de pacientes que han sido hospitalizados por COVID-19 en cuatro clínicas en diferentes ciudades de Colombia Estos datos incluyen detalles demográficos, síntomas al momento del ingreso, variables de examen físico, clasificaciones clínicas.</p>
 <p>Anteriormente, nuestro equipo utilizó estos datos para construir modelos supervisados con el objetivo de predecir ingresos a la UCI. En este proyecto, adoptamos un enfoque diferente al aplicar técnicas de aprendizaje no supervisado. </p>
 
 <h2 >Objetivos</h2>
@@ -55,6 +62,20 @@ Bienvenidos al Proyecto de Agrupación de Pacientes COVID-19</h2>
 
 
 
+<h4>Archivos Ejecutables:</h4>
+
+<ul>
+  <li><b>proyecto_ans.ipynb</b> - Notebook para análisis de dato, elección de modelo y modelación.</li>
+</ul>
+
+<h4>Directorios de Origen:</h4>
+<ul>
+  <li><b>directorio de entrenamiento</b> - Contiene el dataset de pacientes "BD_Morbimortalidad-COVID-19-2.xlsx"</li>
+
+</ul>
+
+
+
 <h2>Metodología</h2>
 <p>La agrupación (clustering) es una técnica de aprendizaje no supervisado en la que los datos se dividen en clústeres basados en similitudes. El objetivo principal es capturar patrones subyacentes en los datos sin necesidad de un labeling previo. En el contexto de nuestro dataset, el clustering puede ayudar a identificar grupos de pacientes con síntomas similares, lo que puede ser valioso para el análisis y la toma de decisiones en los centros de atención médica. </p>
 <p align="center"> 
@@ -66,7 +87,7 @@ Bienvenidos al Proyecto de Agrupación de Pacientes COVID-19</h2>
   <li><strong>Clustering Jerárquico</strong></li>
   <li><strong>DBSCAN</strong> </li>
 </ul>
-<p>La elección del algoritmo final dependerá de la naturaleza de los datos y de la evaluación de los resultados para determinar cuál es más adecuado .</p>
+<p>La elección del algoritmo final dependerá de la evaluación de los resultados. Si bien nuestro dataset cuenta con datos referentes a síntomas y scores médicos. Compararemos los resultados del clustering frente a variables que no serán incluídos en el modelo: gravedad de neumonía, ingreso a la unidad de cuidados intensivos-UCI y mortalidad. Observaremos si los perfiles médicos de nuestro modelo se alinean a estas nuevas variables.</p>
 
 
 <h2> Instrucciones para ejecución del model</h2>
@@ -75,8 +96,7 @@ Bienvenidos al Proyecto de Agrupación de Pacientes COVID-19</h2>
 <p><b>1) model.ipynb</b></p>
 <p>Se ejecuta para efectuar la creación del archivo evaluation.txt. Al principio de este archivo, se ha importado "BD_Morbimortalidad-COVID-19-2.xlsx" para que las funciones definidas en él puedan ser utilizadas.</p>
 
-<p><b>2) evaluation.txt</b></p>
-<p>Finalmente, se debe ejecutar el archivo texto para la comprobación de resultados.</p>
+
 
 
 
